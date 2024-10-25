@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Happy birthday for Ah? ! Jin</title>
-</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GR5VKJESB5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-GR5VKJESB5');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday for Ah? ! Jin_2024110618</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+        .initial-content, .video-content, .image-content {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            align-items: center;
+            justify-content: center;
+        }
+        .initial-content h1 {
+            font-size: 50px;
+            color: #ff6347;
+            margin-top: 20%;
+            animation: fadeIn 3s ease-in-out;
+        }
+        .initial-content p {
+            font-size: 20px;
+            color: #333;
+            animation: fadeInUp 4s ease-in-out;
+        }
+        .balloons {
+            position: absolute;
+            bottom: -100px;
+            width: 100%;
+            animation: float 10s infinite ease-in-out;
+        }
+        @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes float {
+            0% { bottom: -100px; }
+            50% { bottom: 200px; }
+            100% { bottom: -100px; }
+        }
+        .video-content, .image-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .video-content video, .image-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-text, .image-text {
+            position: absolute;
+            color: gold;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .image-subtext {
+            position: absolute;
+            bottom: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: normal;
+        }
+    </style>
+</head>
 <body>
-      Happy birthday for Ah? ! Jin
+    <div class="initial-content" id="initial-content">
+        <h1>Happy birthday for Ah? !Jin</h1>
+        <p>愿你今天充满笑容与快乐！</p>
+        <div class="balloons">🎈🎈🎈🎈🎈</div>
+    </div>
+    <div class="video-content" id="video-content">
+        <video src="https://tp.zhcnli.top/tc/445629678-1-208.mp4" autoplay muted></video>
+        <div class="video-text">Happy birthday for Ah? !Jin</div>
+    </div>
+    <div class="image-content" id="image-content">
+        <img src="https://gitee.com/BaldYang/Mr_measure.gitee.io/raw/main/src/JiangNan_University.jpg" alt="JiangNan University">
+        <div class="image-text">Happy birthday for Ah? !Jin</div>
+        <div class="image-subtext">Mr. Measure；Sunny；Quailfire Lavender </div>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            document.getElementById("initial-content").style.display = "none";
+            document.getElementById("video-content").style.display = "flex";
+            setTimeout(() => {
+                document.getElementById("video-content").style.display = "none";
+                document.getElementById("image-content").style.display = "flex";
+            }, 15000); // 15秒后切换到图片
+        }, 5000); // 5秒后切换到视频
+    </script>
 </body>
+</html>
